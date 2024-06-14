@@ -1,0 +1,295 @@
+a14n06
+10.134.1.87
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:35,928] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-03-04 00:22:37,019] [INFO] [real_accelerator.py:133:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 7
+MA = 10.134.1.87
+World view:  7 12 10.134.1.87
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 11
+MA = 10.134.1.87
+World view:  11 12 10.134.1.87
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 6
+MA = 10.134.1.87
+World view:  6 12 10.134.1.87
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 9
+MA = 10.134.1.87
+World view:  9 12 10.134.1.87
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 10
+MA = 10.134.1.87
+World view:  10 12 10.134.1.87
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [91m[FAIL][0m
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-devel package with yum
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [93m[NO][0m ....... [93m[NO][0m
+cpu_adagrad ............ [93m[NO][0m ....... [92m[OKAY][0m
+cpu_adam ............... [93m[NO][0m ....... [92m[OKAY][0m
+fused_adam ............. [93m[NO][0m ....... [92m[OKAY][0m
+fused_lamb ............. [93m[NO][0m ....... [92m[OKAY][0m
+quantizer .............. [93m[NO][0m ....... [92m[OKAY][0m
+random_ltd ............. [93m[NO][0m ....... [92m[OKAY][0m
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.0
+[93m [WARNING] [0m please install triton==1.0.0 if you want to use sparse attention
+sparse_attn ............ [93m[NO][0m ....... [93m[NO][0m
+spatial_inference ...... [93m[NO][0m ....... [92m[OKAY][0m
+transformer ............ [93m[NO][0m ....... [92m[OKAY][0m
+stochastic_transformer . [93m[NO][0m ....... [92m[OKAY][0m
+transformer_inference .. [93m[NO][0m ....... [92m[OKAY][0m
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/torch']
+torch version .................... 2.0.1
+deepspeed install path ........... ['/gpfs/alpine2/stf218/world-shared/sajal/moe-env-311/lib/python3.11/site-packages/deepspeed']
+deepspeed info ................... 0.10.0+f5c834a6e, f5c834a6e, HEAD
+torch cuda version ............... 11.8
+torch hip version ................ None
+nvcc version ..................... 11.8
+deepspeed wheel compiled w. ...... torch 2.0, cuda 12.2
+**** Git info for Megatron: git_hash=unknown git_branch=unknown ****
+world vision: 12 8
+MA = 10.134.1.87
+World view:  8 12 10.134.1.87
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@batch4>
+Subject: Job 3328776: <gpt3-megatron> in cluster <summit> Done
+
+Job <gpt3-megatron> was submitted from host <login3> by user <sajaldash> in cluster <summit> at Mon Mar  4 00:21:57 2024
+Job was executed on host(s) <1*batch4>, in queue <debug>, as user <sajaldash> in cluster <summit> at Mon Mar  4 00:22:12 2024
+                            <42*a14n06>
+                            <42*a30n04>
+</ccs/home/sajaldash> was used as the home directory.
+</gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed> was used as the working directory.
+Started at Mon Mar  4 00:22:12 2024
+Terminated at Mon Mar  4 00:22:43 2024
+Results reported at Mon Mar  4 00:22:43 2024
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <logs/gpt3-megatron.3328776.e> for stderr output of this job.
+

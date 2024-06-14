@@ -1,0 +1,30 @@
+deepspeed /gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed/../../pretrain_gpt.py --override-opt_param-scheduler --adam-beta1 0.9 --adam-beta2 0.95 --tensor-model-parallel-size 1 --moe-expert-parallel-size 8 --num-experts 8 --moe-loss-coeff 0.01 --moe-train-capacity-factor 1.0 --moe-eval-capacity-factor 1.0 --moe-min-capacity 4 --init-method-std 0.014 --lr-decay-tokens 300000000000 --lr-warmup-tokens 375000000 --micro-batch-size 8 --exit-duration-in-mins 30000000 --global-batch-size 384 --num-layers 24 --hidden-size 2048 --num-attention-heads 16 --seq-length 2048 --max-position-embeddings 2048 --train-tokens 300000000000 --train-iters 1144409 --lr 1.2e-4 --min-lr 1.0e-6 --lr-decay-style cosine --split 98,2,0 --log-interval 10 --eval-interval 100 --eval-iters 10 --save-interval 10000 --weight-decay 0.1 --clip-grad 1.0 --hysteresis 2 --num-workers 0 --fp16 --load /gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed/output/checkpoint/gpt-1.3B-lr-1.2e-4-minlr-1.0e-6-bs-384-gpus-48-mp-1-pp-1-ep-8-mlc-0.01-cap-1.0-drop-true --save /gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed/output/checkpoint/gpt-1.3B-lr-1.2e-4-minlr-1.0e-6-bs-384-gpus-48-mp-1-pp-1-ep-8-mlc-0.01-cap-1.0-drop-true --tensorboard-queue-size 1 --log-timers-to-tensorboard --log-batch-size-to-tensorboard --log-validation-ppl-to-tensorboard --tensorboard-dir /gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed/output/tensorboard/gpt-1.3B-lr-1.2e-4-minlr-1.0e-6-bs-384-gpus-48-mp-1-pp-1-ep-8-mlc-0.01-cap-1.0-drop-true_batch2_2024.03.04-00.04.42 --checkpoint-activations --create-moe-param-group --vocab-file /data/the_pile_public_merged_nopreprocessing/gpt2-vocab.json --merge-file /data/the_pile_public_merged_nopreprocessing/gpt2-merges.txt --data-path /data/the_pile_public_merged_nopreprocessing/pile_text_document --data-impl mmap --deepspeed --deepspeed_config ds_config_gpt_gpt-1.3B-lr-1.2e-4-minlr-1.0e-6-bs-384-gpus-48-mp-1-pp-1-ep-8-mlc-0.01-cap-1.0-drop-true.json --pipeline-model-parallel-size 1 --no-pipeline-parallel --deepspeed-activation-checkpointing &> /gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed/output/log/gpt-1.3B-lr-1.2e-4-minlr-1.0e-6-bs-384-gpus-48-mp-1-pp-1-ep-8-mlc-0.01-cap-1.0-drop-true_batch2_2024.03.04-00.04.42.log
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@batch2>
+Subject: Job 3328602: <gpt3-megatron> in cluster <summit> Done
+
+Job <gpt3-megatron> was submitted from host <login3> by user <sajaldash> in cluster <summit> at Mon Mar  4 00:04:23 2024
+Job was executed on host(s) <1*batch2>, in queue <debug>, as user <sajaldash> in cluster <summit> at Mon Mar  4 00:04:25 2024
+                            <42*a16n03>
+                            <42*a16n05>
+                            <42*a16n07>
+                            <42*a27n08>
+                            <42*a27n09>
+                            <42*a27n10>
+                            <42*a28n13>
+                            <42*a28n14>
+</ccs/home/sajaldash> was used as the home directory.
+</gpfs/alpine2/stf218/world-shared/sajal/Megatron-DeepSpeed> was used as the working directory.
+Started at Mon Mar  4 00:04:25 2024
+Terminated at Mon Mar  4 00:05:04 2024
+Results reported at Mon Mar  4 00:05:04 2024
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <logs/gpt3-megatron.3328602.e> for stderr output of this job.
+

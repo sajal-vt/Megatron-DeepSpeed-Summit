@@ -1,0 +1,10 @@
+# ninja log v5
+0	40117	1709483003651011987	scaled_upper_triang_masked_softmax.o	73f881f66f2fcd6b
+1	313051	1709483276582223811	scaled_upper_triang_masked_softmax_cuda.cuda.o	bc1cacdb4d6b4127
+313051	314029	1709483277538326892	scaled_upper_triang_masked_softmax_cuda.so	9d6d880fc2598d0d
+0	38555	1709483316161370429	scaled_masked_softmax.o	629699863bf65a1f
+1	173039	1709483450643107004	scaled_masked_softmax_cuda.cuda.o	1aca14ef0b30d6aa
+173039	173966	1709483451561933417	scaled_masked_softmax_cuda.so	e6f60c34286f6821
+0	37704	1709483489317984767	scaled_softmax.o	79ee20b9c2fd6b01
+1	164184	1709524031483051919	scaled_softmax_cuda.cuda.o	9b5a4ef700ce9888
+164187	165304	1709524032596636291	scaled_softmax_cuda.so	3c9c9ec5d65a7f9f
